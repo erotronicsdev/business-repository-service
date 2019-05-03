@@ -10,7 +10,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import javax.sql.DataSource;
 
 @SpringBootApplication
-@ComponentScan({"net.erotronics.business.controller"})
+@ComponentScan({"net.erotronics.business.controller", "net.erotronics.business.service" })
 @EnableJpaRepositories
 public class Application implements CommandLineRunner {
 

@@ -1,6 +1,7 @@
 package net.erotronics.business.controller;
 
 import net.erotronics.business.service.BusinessService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -11,7 +12,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/business-repository-service")
 public class BusinessRepoController {
-
+@Autowired
     private BusinessService businessService;
 
     @RequestMapping(
